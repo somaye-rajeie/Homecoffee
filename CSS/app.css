@@ -1,15 +1,208 @@
-@import"fonts.css";
-@import"grid.css";
-@import"reset.css";
+@import "fonts.css";
+@import "grid.css";
+@import "reset.css";
 
-:root{
-
+:root {
+    --bg-color: #F6F5F0;
+    --text-color: #333333;
+    --B0A27B-color:#B0A27B;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
+    font-family: "Vazirmatn";
     font-size: 1.6rem;
     line-height: 1.6rem;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+
+Header
+
+*/
+.header {}
+
+/* 
+=============================
+         Header Top
+=============================
+
+*/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding:4rem 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo {}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: var(--text-color);
+}
+
+.header-menu__item {
+    position: relative;
+    transition: all 400ms ease-in;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+}
+.header-menu__item:nth-child(2){
+    position: relative;
+}
+.header-menu__item:nth-child(2)::before,
+.header-menu__item:nth-child(2)::after
+{
+    content: '';
+    width:1px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.11);
+    position: absolute;
+}
+.header-menu__item:nth-child(2)::before{
+    right:-1.5rem;
+}
+.header-menu__item:nth-child(2)::after{
+    left:-1.5rem;
+}
+.header-menu__link {
+    color: inherit;
+}
+.header-menu__link-icon{
+    margin-right: 0.8rem;
+}
+.submenu-products {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 20rem;
+    color: var(--text-color);
+    padding:1rem 0;
+    /* height: 0; */
+    overflow: hidden;
+    position: absolute;
+    top:3rem;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    -ms-transition: opacity 200ms ease-in;
+    -o-transition: opacity 200ms ease-in;
+}
+
+.submenu-products__item {
+    margin-bottom: 1rem;
+    margin-right:1rem;
+}
+
+.submenu-products__link {
+    color: inherit;
+}
+
+.header-menu__item:hover .submenu-products {
+    /* height: 20rem; */
+    overflow: visible;
+    opacity: 1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.header__search {
+    width:4.2rem;
+    height: 4.2rem;
+    border-radius:4.2rem;
+    -webkit-border-radius:4.2rem;
+    -moz-border-radius:4.2rem;
+    -ms-border-radius:4.2rem;
+    -o-border-radius:4.2rem;
+    -webkit-border-radius:4.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__profile {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 4.2rem;
+    -webkit-border-radius: 4.2rem;
+    -moz-border-radius: 4.2rem;
+    -ms-border-radius: 4.2rem;
+    -o-border-radius: 4.2rem;
+    padding:1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.header__profile-icon {}
+
+.header__profile-txt {}
+
+.header__shopping-cart {
+    background-color: var(--B0A27B-color);
+    border-radius:4.2rem;
+    -webkit-border-radius:4.2rem;
+    -moz-border-radius:4.2rem;
+    -ms-border-radius:4.2rem;
+    -o-border-radius:4.2rem;
+    color: #fff;
+    padding:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    position: relative;
+}
+.header__shopping-cart span:nth-child(3){
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.header__shopping-cart-payment-amount {
+    width:18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    color:var(--B0A27B-color);
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 900;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left: 0;
 }
