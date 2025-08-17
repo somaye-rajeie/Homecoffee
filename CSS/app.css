@@ -41,7 +41,79 @@ Header
     justify-content: space-between;
     padding:4rem 0;
 }
+.nav-menu{
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 250ms ease-in;
+    -webkit-transition:all 250ms ease-in;
+    -moz-transition:all 250ms ease-in;
+    -ms-transition:all 250ms ease-in;
+    -o-transition:all 250ms ease-in;
+}
+.nav-menu--open{
 
+}
+.nav-menu__middle-line{
+    width:30px;
+    height: 5px;
+    background-color:#333333;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+.nav-menu__middle-line::before,
+.nav-menu__middle-line::after{
+    content: "";
+    width:30px;
+    height: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #333333;
+    position: absolute;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.nav-menu__middle-line::before{
+top:-1rem;
+}
+.nav-menu__middle-line::after{
+top:1rem;
+}
+.nav-menu--open .nav-menu__middle-line{
+    background-color: transparent;
+}
+.nav-menu--open .nav-menu__middle-line::before{
+    transform:translateY(1rem) rotate(45deg);
+    -webkit-transform:translateY(1rem) rotate(45deg);
+    -moz-transform:translateY(1rem) rotate(45deg);
+    -ms-transform:translateY(1rem) rotate(45deg);
+    -o-transform:translateY(1rem) rotate(45deg);
+}
+.nav-menu--open .nav-menu__middle-line::after{
+    transform:translateY(-1rem) rotate(-45deg);
+    -webkit-transform:translateY(-1rem) rotate(-45deg);
+    -moz-transform:translateY(-1rem) rotate(-45deg);
+    -ms-transform:translateY(-1rem) rotate(-45deg);
+    -o-transform:translateY(-1rem) rotate(-45deg);
+}
 .header-right {
     display: flex;
     align-items: center;
