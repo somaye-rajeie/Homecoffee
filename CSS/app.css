@@ -6,6 +6,8 @@
     --bg-color: #F6F5F0;
     --text-color: #333333;
     --B0A27B-color: #B0A27B;
+    --4F2C19-color: #4F2C19;
+    --E2DFD5-color: #E2DFD5;
 }
 
 html {
@@ -294,4 +296,153 @@ Header
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* 
+=============================
+         Header Bottom
+=============================
+
+*/
+.header-bottom {
+    text-align: center;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+.header-bottom__title {
+    font-size: 8.5rem;
+    line-height: 8.5rem;
+    color: #242424;
+}
+
+.header-bottom__title span {
+    font-family: "Vazirmatn Bold";
+    font-size: 8.5rem;
+    line-height: 8.5rem;
+    color: var(--4F2C19-color);
+}
+
+.header-bottom__subtitle {
+    font-family: "Vazirmatn SemiBold";
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #242424;
+    margin: 5rem 0 4rem 0;
+}
+
+.header-bottom__link {
+    width: 18.9rem;
+    background-color: var(--B0A27B-color);
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    color: #fff;
+    font-family: "Vazirmatn Medium";
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+.header-bottom__image {}
+
+.statistics {
+    width:100rem;
+    background-color: var(--E2DFD5-color);
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+    margin:0 auto;
+    position: absolute;
+    bottom: -10.2rem;
+    left: 0;
+    right: 0;
+}
+
+.statistics__item {}
+
+.statistics__item span {
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    color: var(--4F2C19-color);
+    font-family: "Vazirmatn Bold";
+}
+
+.statistics__item p {
+    font-family: "Vazirmatn Medium";
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #3D3D3D;
+}
+.header-bottom__icon{
+    position: absolute;
+    bottom:13rem;
+    left:8.3rem;
+    z-index: -1;
+}
+/* 
+
+Main
+
+*/
+/* 
+=============================
+  Section Product Categories
+=============================
+
+*/
+.product-categories{
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.product-categories__img{
+
+}
+.product-categories__title{
+font-family: "Vazirmatn Bold";
+font-size: 3.6rem;
+line-height: 50.4px;
+color:#242424;
+}
+.product-categories__subtitle{
+font-family: "Vazirmatn Bold";
+font-size: 1.8rem;
+line-height: 28.8px;
+color:#3D3D3D;
+margin:1rem 0 4rem 0;
+}
+.product-categories__wrapper{
+display: flex;
+justify-content: space-between;
+}
+.product-categories__content{
+    background-color: var(--E2DFD5-color);
+    border-radius:80rem;
+    -webkit-border-radius:80rem;
+    -moz-border-radius:80rem;
+    -ms-border-radius:80rem;
+    -o-border-radius:80rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding:1rem 2rem;
+    cursor: pointer;
+}
+.product-categories__content-img{
+
+}
+.product-categories__content-title{
+font-family: "Vazirmatn Bold";
+font-size: 3rem;
+line-height: 4.2rem;
+color:#242424;
 }
