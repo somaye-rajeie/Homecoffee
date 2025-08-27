@@ -20,6 +20,14 @@
     .product-categories__title::after {
         width: 20rem;
     }
+
+    .coffee-brands__icon-right {
+        right: 18.8rem;
+    }
+
+    .coffee-brands__icon-left {
+        left: 16.9rem;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -73,6 +81,14 @@
     .product-categories__title::before,
     .product-categories__title::after {
         width: 8rem;
+    }
+
+    .coffee-brands__icon-right {
+        right: 13.8rem;
+    }
+
+    .coffee-brands__icon-left {
+        left: 13.9rem;
     }
 
 }
@@ -179,6 +195,22 @@
         width: 0;
     }
 
+    .latest-products-list {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 2rem;
+        font-size: 1.5rem;
+        padding-right: 7rem;
+    }
+
+    .coffee-brands-types {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .coffee-brands__icon-right,
+    .coffee-brands__icon-left {
+        display: none;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -225,6 +257,10 @@
     .statistics {
         bottom: -5rem;
     }
+
+    .coffee-brands-types {
+        padding:0;
+    }
 }
 
 @media screen and (max-width:370px) {
@@ -240,5 +276,14 @@
     .product-categories__content-title {
         font-size: 2rem;
         line-height: 3.2rem;
+    }
+    .coffee-brands__title{
+        font-size: 2.6rem;
+        line-height: 4rem;
+
+    }
+    .coffee-brands__subtitle{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 }
