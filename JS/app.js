@@ -24,3 +24,10 @@ contentSelected=document.querySelector(contentId)
 contentSelected.classList.add('latest-products__wrapper--show')
 })
 })
+// Create VideoPlay
+const containerVideo=document.querySelector('.about-us__content-video-background')
+const video=document.querySelector('.about-us__content-video')
+
+containerVideo.addEventListener('click',function(){
+    video.play();
+})

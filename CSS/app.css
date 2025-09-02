@@ -530,19 +530,22 @@ Main
 =============================
 
 */
-.latest-products {
+.latest-products,
+.discounted-products {
     background-color: #E2DFD3;
     padding: 2rem 0;
 }
 
 .latest-products__img {}
 
-.latest-products__title {
+.latest-products__title,
+.discounted-products__title {
     color: #4F2C19;
     font-family: "Vazirmatn SemiBold";
 }
 
-.latest-products-list {
+.latest-products-list,
+.discounted-products-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,11 +555,10 @@ Main
     line-height: 2.4rem;
     color: var(--text-color);
     margin: 2rem 0 3rem 0;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
 }
 
-.latest-products-list__item {
+.latest-products-list__item,
+.discounted-products-list__item {
     cursor: pointer;
     transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
@@ -566,7 +568,8 @@ Main
     white-space: nowrap;
 }
 
-.latest-products__wrapper {
+.latest-products__wrapper,
+.discounted-products__wrapper {
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -577,26 +580,29 @@ Main
     -o-transition: opacity 200ms ease-in;
 }
 
-.latest-products__wrapper--show {
+.latest-products__wrapper--show,
+.discounted-products__wrapper--show {
     height: auto;
     overflow: visible;
     opacity: 1;
 }
 
-.latest-products__content {
-    /* width:90%; */
+.latest-products__content,
+.discounted-products__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.latest-products__content-top {
+.latest-products__content-top,
+.discounted-products__content-top {
     position: relative;
 }
 
-.latest-products__content-discount {
+.latest-products__content-discount,
+.discounted-products__content-discount {
     width: 5rem;
     height: 5rem;
     border-radius: 3.5rem;
@@ -614,19 +620,23 @@ Main
     right: 7px;
 }
 
-.latest-products__content-img {
-    /* width:90%; */
+.latest-products__content-img,
+.discounted-products__content-img {
     margin: 0 auto;
 }
-.latest-products__content-img img {
-    width:100%;
+
+.latest-products__content-img img,
+.discounted-products__content-img img {
+    width: 100%;
 }
 
-.latest-products__content-bottom {
+.latest-products__content-bottom,
+.discounted-products__content-bottom {
     text-align: center;
 }
 
-.latest-products__content-title {
+.latest-products__content-title,
+.discounted-products__content-title {
     display: block;
     font-family: "Vazirmatn Bold";
     font-size: 1.8rem;
@@ -635,25 +645,29 @@ Main
     margin-top: 1rem;
 }
 
-.latest-products__content-price {
+.latest-products__content-price,
+.discounted-products__content-price {
     margin: 2rem 0;
 }
 
-.latest-products__content-price-unit {
+.latest-products__content-price-unit,
+.discounted-products__content-price-unit {
     color: #BBBBBB;
     font-size: 1.2rem;
     line-height: 2.4rem;
     font-weight: 1000;
 }
 
-.latest-products__content-price-main {
+.latest-products__content-price-main,
+.discounted-products__content-price-main {
     color: #BBBBBB;
     font-size: 1.8rem;
     line-height: 3.6rem;
     position: relative;
 }
 
-.latest-products__content-price-main::before {
+.latest-products__content-price-main::before,
+.discounted-products__content-price-main::before {
     content: "";
     height: 1px;
     width: 5.5rem;
@@ -662,7 +676,8 @@ Main
     top: 1.3rem;
 }
 
-.latest-products__content-price-discount {
+.latest-products__content-price-discount,
+.discounted-products__content-price-discount {
     margin-right: 1rem;
     font-size: 2rem;
     line-height: 4rem;
@@ -670,14 +685,16 @@ Main
     color: var(--B0A27B-color);
 }
 
-.latest-products__content-price-discount-unit {
+.latest-products__content-price-discount-unit,
+.discounted-products__content-price-discount-unit {
     font-size: 1.2rem;
     line-height: 2.4rem;
     color: var(--B0A27B-color);
     font-weight: 1000;
 }
 
-.latest-products__content-btn {
+.latest-products__content-btn,
+.discounted-products__content-btn {
     background-color: #7F6051;
     border-radius: 5rem;
     -webkit-border-radius: 5rem;
@@ -692,59 +709,175 @@ Main
     line-height: 14.4px;
     cursor: pointer;
 }
+
 /* 
 ==============================
      Section Coffee Brands
 ==============================
 
 */
-.coffee-brands{
+.coffee-brands {}
 
-}
-.coffee-brands__title{
+.coffee-brands__title {}
 
+.coffee-brands__subtitle {
+    text-align: center;
+    color: #3D3D3D;
+    line-height: 28.8px;
+    font-family: "Vazirmatn Bold";
+    margin-top: 1rem;
 }
-.coffee-brands__subtitle{
-  text-align: center;
-  color:#3D3D3D;
-  line-height: 28.8px;
-  font-family: "Vazirmatn Bold";
-  margin-top: 1rem;
+
+.coffee-brands-types {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 4rem;
+    justify-items: center;
+    padding: 8rem;
 }
-.coffee-brands-types{
-display: grid;
-grid-template-columns: repeat(4,auto);
-grid-row-gap: 4rem;
-justify-items: center;
-padding:8rem;
-}
-.coffee-brands-types__item{
+
+.coffee-brands-types__item {
     border-radius: 80rem;
     -webkit-border-radius: 80rem;
     -moz-border-radius: 80rem;
     -ms-border-radius: 80rem;
     -o-border-radius: 80rem;
     border: 2px solid #AC988D;
-    width:10.8rem;
+    width: 10.8rem;
     height: 16.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.coffee-brands-types__item-img{
 
-}
-.coffee-brands-types__item-title{
+.coffee-brands-types__item-img {}
 
-}
-.coffee-brands__icon-right{
+.coffee-brands-types__item-title {}
+
+.coffee-brands__icon-right {
     position: absolute;
-    top:13rem;
+    top: 13rem;
     right: 29rem;
 }
-.coffee-brands__icon-left{
+
+.coffee-brands__icon-left {
     position: absolute;
-    bottom:0;
-    left:21.6rem;
+    bottom: 0;
+    left: 21.6rem;
+}
+
+/* 
+==============================
+     Section About Us
+==============================
+
+*/
+.about-us {
+    margin-bottom: 10rem;
+}
+
+.about-us__content {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about-us__content-right {
+    width: 53%;
+}
+
+.about-us__content-title {
+    font-family: "Vazirmatn SemiBold";
+    font-size: 4.2rem;
+    line-height: 6.7rem;
+    color: #242424;
+    font-weight: 600;
+}
+
+.about-us__content-title span {
+    font-family: "Vazirmatn Medium";
+    font-weight: 500;
+}
+
+.about-us__content-text {
+    font-family: "Vazirmatn Medium";
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #3D3D3D;
+    margin: 2rem 0;
+}
+
+.about-us__content-link {
+    display: inline-block;
+    background-color: var(--B0A27B-color);
+    color: #fff;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    font-family: "Vazirmatn SemiBold";
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.about-us__content-left {
+    display: flex;
+    gap:2rem;
+    height: 65rem;
+}
+
+.about-us__content-img {}
+.about-us__content-img img {
+width:100%;
+}
+
+/* .about-us__content-video {
+    background: url(../images/main/about-us/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   width:333.2px;
+   border-radius: 800rem;
+   -webkit-border-radius: 800rem;
+   -moz-border-radius: 800rem;
+   -ms-border-radius: 800rem;
+   -o-border-radius: 800rem;
+   border: 3px solid #3D3D3D;
+} */
+.about-us__content-video-background {
+    width: 333.2px;
+    height: 572.13px;
+    border-radius: 800rem;
+    -webkit-border-radius: 800rem;
+    -moz-border-radius: 800rem;
+    -ms-border-radius: 800rem;
+    -o-border-radius: 800rem;
+    cursor: pointer;
+    border: 3px solid #3D3D3D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+/* .about-us__content-video-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+} */
+
+.about-us__content-video {
+    width:95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 800rem;
+    -webkit-border-radius: 800rem;
+    -moz-border-radius: 800rem;
+    -ms-border-radius: 800rem;
+    -o-border-radius: 800rem;
 }
