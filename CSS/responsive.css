@@ -4,6 +4,14 @@
     .product-categories__title::after {
         width: 29rem;
     }
+
+    .articles__title::before {
+        right: 2.5rem;
+    }
+
+    .articles__title::after {
+        left: 2.5rem;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -17,7 +25,9 @@
     }
 
     .product-categories__title::before,
-    .product-categories__title::after {
+    .product-categories__title::after,
+    .articles__title::before,
+    .articles__title::after {
         width: 20rem;
     }
 
@@ -32,6 +42,33 @@
     .about-us__content-title {
         font-size: 3.2rem;
         line-height: 5.7rem;
+    }
+
+    .articles__title::before {
+        right: -6.5rem;
+    }
+
+    .articles__title::after {
+        left: -6.5rem;
+    }
+
+    .articles__content-title {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        overflow-y: visible;
+    }
+
+    .articles__title::before,
+    .articles__title::after {
+        width: 32rem;
+    }
+
+    .articles__title::before {
+        right: 0.5rem;
+    }
+
+    .articles__title::after {
+        left: -0.5rem;
     }
 }
 
@@ -104,7 +141,7 @@
         width: 50%;
     }
 
-    .about-us__content-title{
+    .about-us__content-title {
         font-size: 2rem;
         line-height: 4rem;
     }
@@ -112,6 +149,37 @@
     .about-us__content-text {
         font-size: 1.6rem;
         line-height: 2.5rem;
+    }
+
+    .articles__content-detail {
+        height: 30rem;
+    }
+
+    .articles__title::before,
+    .articles__title::after {
+        width: 20rem;
+    }
+
+    .articles__content-title {
+        font-size: 1.4rem;
+        white-space: wrap;
+    }
+
+    .articles__content-text {
+        font-size: 1.2rem;
+    }
+
+    .articles__content-text {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .section-head__icon-top {
+        left: 20rem;
+    }
+
+    .section-head__icon-bottom {
+        right: 5.2rem;
     }
 }
 
@@ -242,9 +310,22 @@
         width: 100%;
     }
 
-   .about-us__content-title{
-    font-size: 3.2rem;
-    line-height: 6.7rem;
+    .about-us__content-title {
+        font-size: 3.2rem;
+        line-height: 6.7rem;
+    }
+
+    .section-head__icon-top {
+        left: 3rem;
+    }
+
+    .section-head__icon-bottom {
+        right: 1.2rem;
+    }
+
+    .articles__title::before,
+    .articles__title::after {
+        width: 13rem;
     }
 }
 
@@ -255,6 +336,19 @@
 
     .product-categories__content-icon {
         display: block;
+    }
+
+    .articles__content-title {
+        font-size: 2.1rem;
+    }
+
+    .articles__content-text {
+        font-size: 1.4rem;
+    }
+
+    .section-head__icon-top,
+    .section-head__icon-bottom {
+        display: none;
     }
 }
 
@@ -281,6 +375,11 @@
         line-height: 1rem;
     }
 
+    .articles__title::before,
+    .articles__title::after {
+        width: 9rem;
+    }
+
 }
 
 @media screen and (max-width:450px) {
@@ -291,21 +390,31 @@
     .coffee-brands-types {
         padding: 0;
     }
+
     .about-us__content-left {
-        gap:0;
+        gap: 0;
     }
-    .about-us__content-video-background{
-        width:300px;
+
+    .about-us__content-video-background {
+        width: 300px;
         height: 500px;
     }
-    .about-us__content-video{
-        width:88%;
+
+    .about-us__content-video {
+        width: 88%;
         height: 88%;
     }
-    .about-us__content-title{
+
+    .about-us__content-title {
         font-size: 2.2rem;
         line-height: 5.7rem;
     }
+
+    .articles__title::before,
+    .articles__title::after {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:370px) {
@@ -334,18 +443,21 @@
         line-height: 1.8rem;
     }
 }
-@media screen and (max-width:300px){
-    .about-us__content-left{
+
+@media screen and (max-width:300px) {
+    .about-us__content-left {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    .about-us__content-video-background{
-        width:250px;
+
+    .about-us__content-video-background {
+        width: 250px;
         height: 350px;
         border: none;
     }
-    .about-us__content-link{
+
+    .about-us__content-link {
         font-size: 1.6rem;
         line-height: 1.6rem;
     }
