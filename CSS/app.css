@@ -961,3 +961,60 @@ font-weight: 700;
 line-height: 25.6px;
 color:var(--B0A27B-color);
 }
+/* 
+============================
+     Section Instagram
+============================
+*/
+
+.instagram{
+margin-bottom: 6rem;
+padding-top: 4rem;
+}
+.instagram__content{
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+}
+.instagram__content-right{
+align-self: center;
+}
+.instagram__content-title span:first-child{
+color:var(--B0A27B-color);
+font-family: "Vazirmatn SemiBold";
+font-size: 4.5rem;
+line-height: 6.7rem;
+}
+.instagram__content-title span:last-child{
+color:#242424;
+font-family: "Vazirmatn Medium";
+font-size: 4.5rem;
+line-height: 6.7rem;
+}
+.instagram__content-account{
+font-family: "Vazirmatn SemiBold";
+font-size: 4.5rem;
+line-height: 6.7rem;
+color:#333333;
+font-weight: 600;
+}
+.instagram__content-icon{
+align-self: flex-end;
+margin-bottom: 2rem;
+margin-right: 8rem;
+}
+.instagram__content-left{
+margin-right: 10rem;
+}
+.instagram__content-left img{
+width:100%;
+object-fit: cover;
+}
+/* 
+
+Footer
+
+*/
+.footer{
+    background-color: #333333;
+}
