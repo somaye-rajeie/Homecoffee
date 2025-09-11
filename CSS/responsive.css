@@ -192,6 +192,51 @@
     .instagram__content-icon svg {
         width: 4rem;
     }
+
+    .footer-about-us__item-detail span:first-child {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+
+    }
+
+    .footer-about-us__item-detail span:last-child {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .footer-about-us__item-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .footer-about-us__item-icon svg {
+        width: 1.5rem;
+    }
+
+    .footer-nav-menu {
+        gap: 2rem;
+    }
+
+    .footer-nav__logo {
+        width: 15rem;
+    }
+
+    .footer-nav__logo-img {
+        width: 100%;
+    }
+
+    .footer-nav-menu__link {
+        font-size: 1.4rem;
+    }
+
+    .footer-nav__social-networks-link {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .footer-nav__social-networks-link svg {
+        width: 1.8rem;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -339,6 +384,10 @@
         width: 13rem;
     }
 
+    .instagram__content {
+        flex-direction: column;
+    }
+
     .instagram__content-right {
         text-align: center;
     }
@@ -346,8 +395,8 @@
     .instagram__content-title span:first-child,
     .instagram__content-title span:last-child,
     .instagram__content-account {
-        font-size: 4.5rem;
-        line-height: 6.7rem;
+        font-size: 3.5rem;
+        line-height: 5.7rem;
     }
 
     .instagram__content-icon {
@@ -361,6 +410,67 @@
 
     .instagram__content-left {
         margin-right: 0;
+        width: 34rem;
+    }
+
+    .instagram__content-left img {
+        width: 100%;
+    }
+
+    .footer-about-us {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-about-us__item-detail span:first-child {
+        font-size: 1.8rem;
+        line-height: 30.8px;
+
+    }
+
+    .footer-about-us__item-detail span:last-child {
+        font-size: 1.6rem;
+        line-height: 30.8px;
+    }
+
+    .footer-about-us__item-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .footer-about-us__item-icon svg {
+        width: 3rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-nav__logo {
+        width: 19rem;
+    }
+
+    .footer-nav-menu__link {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .footer-nav__social-networks-link {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    .footer-nav__social-networks-link svg {
+        width: 21.33px;
+    }
+
+    .footer-copy-write {
+        flex-direction: column;
+        gap: 3rem;
+        padding-bottom: 3.5rem;
+        padding-top: 2rem;
+        text-align: center;
     }
 }
 
@@ -415,6 +525,31 @@
         width: 9rem;
     }
 
+    .footer-nav__logo {
+        width: 10rem;
+    }
+
+    .footer-nav-menu__link {
+        font-size: 1.2rem;
+    }
+
+    .footer-nav__social-networks-link {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .footer-nav__social-networks-link svg {
+        width: 1.2rem;
+    }
+
+    .footer-copy-write__text {
+        font-size: 1.2rem;
+    }
+
+    .footer__link {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -449,6 +584,7 @@
     .articles__title::after {
         display: none;
     }
+
     .instagram__content-title span:first-child,
     .instagram__content-title span:last-child,
     .instagram__content-account {
@@ -458,6 +594,28 @@
 
     .instagram__content-icon svg {
         width: 4rem;
+    }
+
+    .instagram__content-left {
+        margin-right: 0;
+    }
+
+    .footer-about-us__item-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .footer-about-us__item-icon svg{
+        width:1.5rem;
+    }
+    .footer-about-us__item-detail{
+        gap:0;
+    }
+    .footer-about-us__item-detail span:first-child{
+        font-size: 1.4rem;
+    }
+    .footer-about-us__item-detail span:last-child {
+        font-size:1.2rem;
     }
 }
 
@@ -485,6 +643,10 @@
     .coffee-brands__subtitle {
         font-size: 1.2rem;
         line-height: 1.8rem;
+    }
+
+    .instagram__content-left {
+        width: 25rem;
     }
 }
 
